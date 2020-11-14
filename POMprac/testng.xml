@@ -3,9 +3,20 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
+    
+      <class name="org.test.testpages.Contacttest"/>
+     
+    </classes>
+  </test> <!-- Test -->
+  
+  <!--
+  <test thread-count="5" name="Test">
+    <classes>
       <class name="org.test.testpages.Hometest"/>
       <class name="org.test.testpages.Contacttest"/>
       <class name="org.test.testpages.Logintest"/>
     </classes>
-  </test> <!-- Test -->
+  </test> 
+  
+    -->  
 </suite> <!-- Suite -->

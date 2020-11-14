@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.test.testpages.Contacttest">
+      <class name="org.test.utils.Utils">
         <methods>
-          <include name="checknames"/>
-          <include name="setup"/>
-          <include name="teardown"/>
+          <include name="getExcelData"/>
         </methods>
-      </class> <!-- org.test.testpages.Contacttest -->
+      </class> <!-- org.test.utils.Utils -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

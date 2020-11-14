@@ -1,5 +1,7 @@
 package org.test.testpages;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.test.base.Testbase;
 import org.test.pages.Contacts;
 import org.test.pages.Homepage;
@@ -12,8 +14,10 @@ public class Contacttest extends Testbase {
 	public static Loginpage lp;
 	public static Homepage hp;
 	public static Contacts cp;
+	Logger logger;
 	public Contacttest() {
 		super();
+		 logger = LogManager.getLogger(Contacttest.class.getName());
 	}
 	
 	@BeforeMethod
@@ -30,6 +34,7 @@ public class Contacttest extends Testbase {
 	@Test
 	public void checknames() {
 		cp.listCount();
+		logger.info("Checked all the names");
 	}
 	
 	@AfterMethod
